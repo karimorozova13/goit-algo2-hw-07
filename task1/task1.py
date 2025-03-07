@@ -1,4 +1,3 @@
-from functools import lru_cache
 import time
 import random
 
@@ -10,15 +9,6 @@ def range_sum_no_cache(array, L, R):
 def update_no_cache(array, index, value):
     array[index] = value
     return array[index]
-
-# @lru_cache(maxsize=1000)
-# def range_sum_with_cache(L, R):
-#     return sum(arr[L:R+1])
-
-# @lru_cache(maxsize=1000)
-# def update_with_cache(index, value):
-#     arr[index] = value
-#     return arr[index]
 
 cache = LRUCache(1000)
 
